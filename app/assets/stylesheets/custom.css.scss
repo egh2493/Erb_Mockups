@@ -11,6 +11,10 @@ body {
     padding-top: 130px;
 }
 
+.ncc {
+    background-color: #C1272D;
+}
+
 
 /* Footer needs to fit almost the whole screen,
 and give it some spacing*/
@@ -50,6 +54,17 @@ a {
 }
 
 
+/*
+Class to accompany a .well on certain pages if the container needs to be slightly wider
+*/
+
+.extra-spacing {
+    padding-top: 30px;
+    margin-bottom: 90px;
+    padding-bottom: 30px;
+}
+
+
 /* Custom text sizing */
 
 .text-lg {
@@ -57,10 +72,14 @@ a {
 }
 
 
-/* Needed ot make the buttons larger for some screens */
+/* Needed to make the buttons larger for some screens */
 
 .btn-wide {
     width: 40%;
+}
+
+.btn-50 {
+    width: 50%;
 }
 
 
@@ -68,6 +87,14 @@ a {
 
 .extra-right-margin {
     margin-right: 65px;
+}
+
+.extra-top-margin {
+    margin-top: 52px;
+}
+
+.extra-bottom-margin {
+    margin-bottom: 5px;
 }
 
 .calendar {
@@ -79,8 +106,32 @@ a {
     margin-left: 65px;
 }
 
-.table-hover tbody tr:hover {
+.table-hover>tbody>tr:hover {
     background-color: #22ADC9;
+    color: white;
+}
+
+
+/* formating for Home2*/
+
+.red {
+    color: #FD0004;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.padding-top {
+    padding-top: 20px;
+}
+
+input[type=number] {
+    text-align: right;
+}
+
+.checkbox {
+    margin: 20 0 0 0;
 }
 
 
@@ -108,6 +159,10 @@ a {
     padding-bottom: 37px;
 }
 
+.navbarAbout {
+    padding-bottom: 70px;
+}
+
 .custom-navbar {
     padding-top: 25px;
     padding-right: 60px;
@@ -121,4 +176,10 @@ a {
 
 .nav-pills li a {
     color: #22ADC9;
+}
+
+nav.navbar {
+    // Animation
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }

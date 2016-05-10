@@ -1,9 +1,4 @@
 <!-- Designed by Nicholas Drazenovic & Emily Huizenga -->
-<!DOCTYPE html>
-
-<head>
-</head>
-
 <body>
    <%= render 'layouts/navbar' %>
 
@@ -12,7 +7,7 @@
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1">
                 <h2>Users</h2>
-                <p>Select a user from the list below to edit. To add a new user click 'Add New User'</p>
+                <p>Click the 'Add New User' button to create a new account or select a user from the list below to edit or delete it.</p>
             </div>
         </div>
         <br />
@@ -27,11 +22,11 @@
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1">
                 <!-- Table of users -->
-                <table class="table table-hover table-striped">
+                <table class="table table-hover table-striped table-responsive">
                     <thead>
                         <tr>
-                            <th>id</th>
-                            <th>email</th>
+                            <th>Username</th>
+                            <th>Email</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,7 +48,3 @@
         </div>
     </div>
 </body>
-
-
-
-</html>

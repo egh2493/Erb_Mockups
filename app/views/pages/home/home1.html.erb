@@ -1,26 +1,20 @@
-<!DOCTYPE html>
-
-<head>
-</head>
-
 <body>
 
     <%= render 'layouts/navbar' %>
+
     <div class='container white-container'>
         <div class="row">
-            <div class="col-xs-4 col-xs-offset-1">
-                <h4>Welcome, Nicholas!</h4></div>
-        </div>
-        <div class="row">
             <div class="col-xs-10 col-xs-offset-1">
-                <h2>Pending Pickups</h2>
-                <p>Select a pickup from the list below to edit. To add a new pickup click 'Add New Pickup'</p>
+                <h2>Unscheduled Pickups</h2>
+                <p>Click the 'Add New Pickup' button to create a new pickup or select a pickup from the list below to edit, schedule, or reject it.</p>
             </div>
         </div>
         <br />
         <div class="row">
             <div class="col-xs-5 col-xs-offset-1">
-                <a href="/home/home2"><btn class="btn btn-success"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Add New Pickup</btn></a>
+                <a href="home/home2">
+                    <btn class="btn btn-success"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Add New Pickup</btn>
+                </a>
             </div>
         </div>
         <br />
@@ -31,18 +25,18 @@
                         <tr>
                             <th>Last Name</th>
                             <th>Town</th>
-                            <th>Item Quantity</th>
+                            <th>Quantity</th>
                             <th>Item Description</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr onclick="window.document.location='/home/home3';">
+                        <tr>
                             <td>Krieger</td>
                             <td>Naperville</td>
                             <td>7 items</td>
                             <td>Lightly used dining table, 6 chairs in good condition</td>
                         </tr>
-                        <tr>
+                        <tr onclick="window.document.location='home/home3';">
                             <td>Dust</td>
                             <td>Lisle</td>
                             <td>3 items</td>
@@ -80,5 +74,3 @@
     </div>
 
 </body>
-
-</html>

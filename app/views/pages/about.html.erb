@@ -1,46 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<body class="ncc">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About the Team | CSC 495 Capstone | Project Haymaker</title>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
+    <div class='navbarAbout navbar-default navbar-fixed-top'>
+        <div class='container-fluid'>
+            <div class='navbar-header'>
+                <div class="col-xs-9 col-md-12">
+                    <div class='navbar-brand'>
+                        <a id='logo' href='/home/home1'><img id='logoImg' src="/assets/NCC_logo.png" height="100px" alt="Sharing Connections Logo">
+                        </a>
+                    </div>
+                </div>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Odyssey Pickup Assistant</a>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav nav-pills navbar-right custom-navbar">
+                    <li role="presentation">
+                        <a href="/home/home1">Back to Pickup Assistant</a>
+                    </li>
+                </ul>
             </div>
-            <!--/.navbar-collapse -->
         </div>
-    </nav>
+    </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-        <div class="container">
-            <h1>About the Team</h1>
-            <p>Our team consists of 13 senior computer science majors at North Central College fueled by coffee, energy drinks, and hopes of a successful project. Then, there will be some other cool wording here, but sometimes words are hard to come up with. So right now this is just more filler text.</p>
-            <p><a class="btn btn-primary btn-lg" href="http://northcentralcollege.edu/home" target="_blank" role="button">Learn More About NCC &raquo;</a></p>
-        </div>
+    <div class="well">
+        <h2>About Project Odyssey</h2>
+        <p>Our project team consists of 13 seniors majoring in computer science at North Central College, led by a computer science faculty member, as part of the program's capstone experience. Our project involved creating a scheduling assistant for Sharing Connections. Professor Bill and Jennifer D met with the folks at Sharking Connections to make sure we understood their current process in order to best translate that to a web application. Once preliminary mockups were made, we got to work creating the application's front-end design and back-end functionality.</p>
+        <p>During development, we used Agile and Scrum methodologies, which emphasize individuals over processes, working software over documentation, customer collaboration, and quick responses to changes. To build the front-end user interface, our Bootstrap team used the Bootstrap framework, which includes a library of HTML, CSS, and JavaScript tools to create dynamic, stylish applications. The product's back-end was written using Ruby on Rails, a powerful, modern programming language and framework for web-based applications.</p>
+        <p>Throughout the whole process, our team collaborated using the Slack application to communicate outside the classroom and GitHub platform to store and share our code. We also used the Cloud9 web-based development environment, which allowed us to easliy access the project from anywhere and integrate with GitHub.</p>
+        <p><a class="btn btn-danger btn-primary btn-lg" href="http://northcentralcollege.edu/home" target="_blank" role="button">Learn More About NCC &raquo;</a></p>
     </div>
 
     <div class="container">
@@ -49,39 +41,29 @@
             <div class="col-md-4">
                 <h2>Team 1</h2>
                 <ul>
-                    <li>Rachel R</li>
-                    <li>Jennifer D</li>
-                    <li>Nicholas D</li>
-                    <li>Emily H</li>
-                    <li>Mark P</li>
-                    <li>Bilal A</li>
-                    <li>Eric Z</li>
+                    <li>Rachel R - Team Leader, Reports</li>
+                    <li>Jennifer D - Ruby &amp; User Experience Leader</li>
+                    <li>Nicholas D - Bootstrap Team</li>
+                    <li>Emily H - Bootstrap Team</li>
+                    <li>Mark P - Home, Architecture</li>
+                    <li>Bilal A - Schedule, Architecture</li>
+                    <li>Eric Z - Git Master, Login</li>
                 </ul>
-                <p><a class="btn btn-default" href="#" role="button">Learn more about Team 1 &raquo;</a></p>
             </div>
             <div class="col-md-4">
                 <h2>Team 2</h2>
                 <ul>
-                    <li>Nick O</li>
-                    <li>Chase S</li>
-                    <li>Charlie M</li>
-                    <li>Kyle L</li>
-                    <li>Gerardo P</li>
+                    <li>Nick O - Team Leader, About</li>
+                    <li>Chase S - Git Master</li>
+                    <li>Charlie M - Admin</li>
+                    <li>Kyle L - Home</li>
+                    <li>Gerardo P - Reports</li>
                 </ul>
-                <p><a class="btn btn-default" href="#" role="button">Learn more about Team 2 &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <img src="/assets/chippy.png">
             </div>
         </div>
     </div>
-    <!-- /container -->
+    <div class="col-md-4 col-md-offset-9">
+        <img src="/assets/chippy.png">
+    </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="./js/vendor/jquery.min.js"><\/script>')
-    </script>
-    <script src="/boot/js/bootstrap.min.js"></script>
 </body>
-
-</html>

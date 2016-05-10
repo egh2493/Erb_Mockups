@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-
-<head>
-</head>
-
 <body>
     <%= render 'layouts/navbar' %>
 
@@ -10,13 +5,14 @@
 
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1">
-                <p>Select a pickup from the list below to edit.</p>
+                <h2>Pickup Day: Tue, Apr 12, 2016</h2>
+                <p>Select a pickup from the list below to edit or reschedule it.</p>
             </div>
         </div>
 
         <br />
         <div class="row">
-            <div class="col-xs-11 col-xs-offset-1">
+            <div class="col-xs-10 col-xs-offset-1">
                 <table class="table table-hover table-striped table-responsive">
                     <thead>
                         <tr>
@@ -27,17 +23,17 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <tr onclick="window.document.location='home/home3';">
+                            <td>Dust</td>
+                            <td>Lisle</td>
+                            <td>3 items</td>
+                            <td>Young adult bed frame, black bookshelf, black tall dresser</td>
+                        </tr>
                         <tr>
                             <td>Krieger</td>
                             <td>Naperville</td>
                             <td>7 items</td>
                             <td>Lightly used dining table, 6 chairs in good condition</td>
-                        </tr>
-                        <tr>
-                            <td>Dust</td>
-                            <td>Lisle</td>
-                            <td>3 items</td>
-                            <td>Young adult bed frame, black bookshelf, black tall dresser</td>
                         </tr>
                         <tr>
                             <td>Falimirski</td>
@@ -53,11 +49,14 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="form-group text-right">
+                    <a href="schedule/schedule1">
+                            Delete Pickup Day
+                        </a>
+                </div>
             </div>
         </div>
 
     </div>
 
 </body>
-
-</html>

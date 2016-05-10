@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   get    'schedule/schedule1'     => 'pages#schedule1'
   get    'schedule/schedule2'     => 'pages#schedule2'
   get    'schedule/schedule3'     => 'pages#schedule3'
+
+ get 'accounts/accounts1'         => 'pages#accounts1'
   
   get    'template'               => 'pages#template'
 end

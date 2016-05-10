@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-
-<head>
-
-</head>
-
 <body>
     <%= render 'layouts/navbar' %>
 
@@ -12,21 +6,28 @@
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1">
                 <h2>Schedule</h2>
-                <p>Select a pickup from the list below to edit. To add a new donation click 'Add New Pickup Day.'</p>
+                <p>Click the 'Add New Pickup Day' button to create a new pickup day or select an available day from the list below to view scheduled pickups.</p>
             </div>
         </div>
         <br />
         <div class="row">
-            <div class="col-xs-5 col-xs-offset-1">
-                <a href="/schedule/schedule2">
+            <div class="col-xs-6 col-xs-offset-1">
+                <a href="schedule/schedule2">
                     <btn class="btn btn-success"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Add New Pickup Day</btn>
                 </a>
+            </div>
+            <div class="col-xs-5">
+                <span class="pull-right"><label>Viewing:</label>&nbsp;
+                <select id="pickupSelect" class="extra-right-margin">
+                    <option value="availableDays">Current Days</option>
+                    <option value="past30">Previous 30 Days</option>
+                    </select></span>
             </div>
         </div>
         <br />
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1">
-                <table class="table table-hover table-striped">
+                <table class="table table-hover table-striped table-responsive">
                     <thead>
                         <tr>
                             <th>Date</th>
@@ -36,22 +37,22 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Tue April 5</td>
+                            <td>Tue Apr 5</td>
                             <td>6 Pickups</td>
                             <td>Oak Brook, Lombard, Villa Park</td>
                         </tr>
-                        <tr onclick="window.document.location='/schedule/schedule3';">
-                            <td>Tue April 12</td>
+                        <tr onclick="window.document.location='schedule/schedule3';">
+                            <td>Tue Apr 12</td>
                             <td>4 Pickups</td>
                             <td>Lisle, Naperville, Downers Grove, Rockford, Glen Ellyn, ...</td>
                         </tr>
                         <tr>
-                            <td>Fri April 15</td>
+                            <td>Fri Apr 15</td>
                             <td>No Pickups</td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>Fri April 22</td>
+                            <td>Fri Apr 22</td>
                             <td>1 Pickup</td>
                             <td>Westmont</td>
                         </tr>
@@ -73,5 +74,3 @@
     </div>
 
 </body>
-
-</html>
